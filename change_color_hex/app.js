@@ -6,16 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function random() {
         const digits = "0123456789ABCDEF"
-
         let hex = "#";
-        for (let i = 0; i < 3; i++) {
-            for (let j = 0; j < 2; j++) {
-                hex += digits.charAt(Math.round(Math.random() * digits.length));
-            }
+        
+        for (let i = 0; i < 6; i++) {
+            hex += digits.charAt(Math.floor(Math.random() * digits.length));
         }
-
-        console.log(hex);
-
+        
         return hex;
     }
 
