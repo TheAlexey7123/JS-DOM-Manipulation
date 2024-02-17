@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color RGB</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="color">
+                <label for="red">Red</label>
+                <input id="red" type="range" min="0" max="255" value="23" step="1">
+                <p id="text-red"></p>
+            </div>
+
+            <div class="color">
+                <label for="green">Green</label>
+                <input id="green" type="range" min="0" max="255" value="41" step="1">
+                <p id="text-green"></p>
+            </div>
+
+            <div class="color">
+                <label for="blue">Blue</label>
+                <input id="blue" type="range" min="0" max="255" value="56" step="1">
+                <p id="text-blue"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
